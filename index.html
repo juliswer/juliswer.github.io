@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Julián Swerdlin</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
 </head>
 <body class="hidden">
@@ -25,7 +25,7 @@
                 <div class="hero__texts">
                     <h1 class="hero_title">
                         Hola, soy Julián Swerdlin, desarrollador de Frontend.</h1>
-                        <h2 class="hero__subtitle">Transformando ideas a realidades</h2>
+                        <h2 class="hero__subtitle">Transformando ideas en realidades</h2>
                 </div>
             </section>
         </div>
@@ -35,7 +35,7 @@
     <main>
 
         <section class="presentation__container" id="presentation">
-            <img src="assets/Julián.jpg" class="presentation__picture">
+            <img src="/assets/Julián.jpg" class="presentation__picture">
             <h2 class="subtitle">Mi nombre es Julián Ariel Swerdlin</h2>
             <p class="presentation__copy">Si bien el mundo de la programación fue algo lo cual me llamó la atención desde una temprana edad, fue recién mis 15 años de edad en los cuales me adentré en este mundo, y es ahora, con 17 años, que me siento listo para poder utilizar mis conocimientos con un fin realizador.</p>
         </section>
@@ -87,16 +87,75 @@
             </div>
         </section>
 
-        <section class="form container">
-            <h2 class="subtitle">Contáctame</h2>
-            <form action="contacto.php" class="form" id="formulario">
-                <input class="formulario input" type="text" name="" id="nombre" placeholder="Nombre" required>
-                <input class="formulario input" type="text" name="" id="asunto" placeholder="Asunto" required>
-                <input class="formulario input dif" type="email" name="" id="email" placeholder="Email" required>
-                <textarea class="formulario input" name="" id="cuerpo" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                <input class="formulario input" type="submit" value="Enviar" id="enviar">
-            </form>
+        <section class="container">
+            <h1 class="subtitle titulo">Preguntas Frecuentes</h1>
+            <div class="categorias" id="categorias">
+                <div class="categoria" data-categoria="metodos-pago">
+                    <i class="fas fa-briefcase icono"></i>
+                    <p>Trabajos</p>
+                </div>
+                <div class="categoria" data-categoria="entregas">
+                    <i class="far fa-id-badge icono"></i>
+                    <p>Sobre mi</p>
+                </div>
+                <div class="categoria" data-categoria="seguridad">
+                    <i class="fas fa-user-shield icono"></i>
+                    <p>Privacidad</p>
+                </div>
+                <div class="categoria" data-categoria="cuenta">
+                    <i class="far fa-clock icono"></i>
+                    <p>Tiempo</p>
+                </div>
+            </div>
+
+        <div class="preguntas">
+            <div class="contenedor-preguntas" data-categoria="metodos-pago">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Que tipo de trabajos manejo? <i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Manejo trabajos de todo tipo, desde paginas simples hasta complejas. Yo toda pagina que pueda llevar a cabo lo hare, la dificultad es algo relativo, ya que hay muchas maneras de cumplir un cometido.</p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Tienen plazo de pago? <i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio asperiores quas modi quia reprehenderit ad hic non. Non praesentium veritatis eligendi ipsam soluta numquam dolorem? Nulla, velit? Quidem, architecto!</p>
+                </div>
+            </div>
+
+            <div class="contenedor-preguntas" data-categoria="entregas">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Tienen entregas a domicilio? <i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio asperiores quas modi quia reprehenderit ad hic non. Non praesentium veritatis eligendi ipsam soluta numquam dolorem? Nulla, velit? Quidem, architecto!</p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cuánto sale el envío en mi país? <i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio asperiores quas modi quia reprehenderit ad hic non. Non praesentium veritatis eligendi ipsam soluta numquam dolorem? Nulla, velit? Quidem, architecto!</p>
+                </div>
+            </div>
+
+            <div class="contenedor-preguntas" data-categoria="seguridad">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cómo puedo saber si son confiables?<i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio asperiores quas modi quia reprehenderit ad hic non. Non praesentium veritatis eligendi ipsam soluta numquam dolorem? Nulla, velit? Quidem, architecto!</p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Qué pasa con mis datos personales? <i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio asperiores quas modi quia reprehenderit ad hic non. Non praesentium veritatis eligendi ipsam soluta numquam dolorem? Nulla, velit? Quidem, architecto!</p>
+                </div>
+            </div>
+
+            <div class="contenedor-preguntas" data-categoria="cuenta">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cómo puedo acceder a mis pedidos? <i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio asperiores quas modi quia reprehenderit ad hic non. Non praesentium veritatis eligendi ipsam soluta numquam dolorem? Nulla, velit? Quidem, architecto!</p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cómo puedo cambiar mi contraseña? <i class="fas fa-plus"></i></p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio asperiores quas modi quia reprehenderit ad hic non. Non praesentium veritatis eligendi ipsam soluta numquam dolorem? Nulla, velit? Quidem, architecto!</p>
+                </div>
+            </div>
+        
+        </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -127,12 +186,12 @@
                 </div>
             </section>
         </div>
-        <a href="" class="btn-flotante" id="enlace-contacto2">Contáctame</a>
+        <a href="/" class="btn-flotante" id="enlace-contacto2">Contáctame</a>
     </footer>
     
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/jquery.js"></script>
+    <script src="/main.js"></script>
     <script src="https://kit.fontawesome.com/123aef3e32.js" crossorigin="anonymous"></script>
 </body>
 </html>
