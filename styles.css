@@ -594,7 +594,6 @@ body::-webkit-scrollbar-thumb {
 
     .nav__items{
         font-weight: 400;
-        border-bottom: 1px solid #ffffff;
         margin-right: 0;
     }
 
@@ -679,5 +678,15 @@ body::-webkit-scrollbar-thumb {
 
     .btn-flotante {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .nav__items{
+        text-decoration: none;
+    }
+    
+    .nav__items--cta{
+        border: none
     }
 }
