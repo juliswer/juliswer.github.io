@@ -509,7 +509,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 38px;
     text-decoration: none;
     margin: 9px;
-    margin-left: 5px;
+    margin-left: 6px;
 }
 
 .footer__icon--git{
