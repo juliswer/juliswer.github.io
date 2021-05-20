@@ -535,7 +535,7 @@ body::-webkit-scrollbar-thumb {
 .footer__icon--tl:hover{
     color: #4762db;
     transition: .2s all;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .footer__icon--git:hover {
